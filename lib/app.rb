@@ -11,6 +11,13 @@ get '/secret' do
   "This is a secret message"
 end
 
-get '/cat' do
+get '/random_cat' do
+  @name = ["Tom", "Dick", "Harry"].sample
+  erb(:index)
+end
+
+get '/named-cat' do
+  p params
+  @name = params[:name]
   erb(:index)
 end
