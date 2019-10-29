@@ -8,13 +8,11 @@ get '/' do
 end
 
 get '/secret' do
-  "Secret"
+  "This is a secret message"
 end
 
-get '/hello' do
-  "Hello"
-end
-
-get '/hi' do
-  "Hi"
+get '/cat' do
+  "<div>
+    <img src='http://bit.ly/1eze8aE'>
+   </div>"
 end
